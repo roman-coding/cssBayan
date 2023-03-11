@@ -53,6 +53,7 @@ h1 {
 }
 
 .bayan__content {
+  display: block;
   padding: 0 3rem;
   margin: 0 auto;
 
