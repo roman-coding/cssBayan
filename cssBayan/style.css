@@ -24,3 +24,63 @@ h1 {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+/* Bayan */
+.bayan {
+  margin: 2rem 0;
+}
+
+.bayan__input {
+  display: none;
+}
+
+.bayan__label {
+  display: block;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  font-weight: 700;
+  font-family: Verdana, sans-serif;
+  color: #0059d9;
+
+  background-repeat: no-repeat;
+  background-size: 1.5rem 1.5rem;
+  background-position: 100% 2rem;
+
+  border-top: 0.1rem solid #4d4d4d7c;
+  transition: all 0.35s;
+}
+
+.bayan__content {
+  padding: 0 3rem;
+  margin: 0 auto;
+
+  height: 0;
+
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.bayan__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+/* Checked */
+.bayan__input:checked + .bayan__label {
+  color: #000;
+}
+
+.bayan__input:checked + .bayan__label .bayan__content {
+  height: auto;
+  padding: 2rem 3rem 1rem;
+}
+
+.bayan__input:checked + .bayan__label .bayan__content .bayan__img {
+  transform: scale(1);
+}
